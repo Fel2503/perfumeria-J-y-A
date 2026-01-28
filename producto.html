@@ -29,7 +29,7 @@
         /* ===== HEADER ===== */
         header {
             background-color: #222;
-            padding: 12px 40px;
+            padding: 8px 30px;
             display: grid;
             grid-template-columns: 1fr auto 1fr;
             align-items: center;
@@ -42,7 +42,7 @@
 
         .brand-name {
             color: #d4af37;
-            font-size: 24px;
+            font-size: 14px;
             font-family: 'Lobster', cursive;
         }
 
@@ -51,7 +51,7 @@
         }
 
         .header-center img {
-            height: 40px;
+            height: 60px;
             width: auto;
         }
 
@@ -65,8 +65,9 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            margin-left: 20px;
+            margin-left: 15px;
             font-weight: bold;
+            font-size: 14px;
         }
 
         nav a:hover {
@@ -218,6 +219,35 @@
             padding-top: 15px;
             font-size: 13px;
             color: #aaa;
+        }
+
+        /* AJUSTE PARA PANTALLAS GRANDES (DESKTOP) */
+        @media (min-width: 1025px) {
+            .product-container {
+                max-width: 1200px !important;
+                padding: 60px !important;
+                gap: 80px !important;
+            }
+
+            .brand-name {
+                font-size: 16px !important;
+            }
+
+            .header-center img {
+                height: 80px !important;
+            }
+
+            .product-details h1 {
+                font-size: 64px !important;
+            }
+
+            .product-details .price {
+                font-size: 36px !important;
+            }
+
+            .product-details p {
+                font-size: 18px !important;
+            }
         }
     </style>
 </head>

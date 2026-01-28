@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1050">
+    <title>Perfumería JyA</title>
+    <!-- Fuente Lobster -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        .btn-comprar {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background-color: #d4af37;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+            background-color: #b8962e;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: #222;
+            padding: 12px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-name {
+            color: #d4af37;
+            font-size: 24px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .header-center {
+            text-align: center;
+        }
+
+        /* Cambia el tamaño de la imagen aquí / Change image size here */
+        .header-center img {
+            height: 40px;
+            /* Ajusta este valor según prefieras / Adjust this value as preferred */
+            width: auto;
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)),
+                url("head.png") center/cover no-repeat;
+            height: 80vh;
+            /* Alargado un poquito verticalmente */
+            width: 100%;
+            /* Cambiado de 100vw para evitar saltos */
+            max-width: none !important;
+            /* Rompe el límite de la sección */
+            margin: 0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Ajuste para que el hero sea más pequeño y atractivo en celulares */
+        @media (max-aspect-ratio: 1/1) {
+            .hero {
+                height: 35vh;
+                /* Más pequeño como se pidió */
+                padding: 30px 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 42px;
+                /* Un poco más compacto */
+            }
+
+            .hero-content p {
+                font-size: 18px;
+            }
+        }
+
+        .hero-content img {
+            width: 220px;
+            max-width: 70%;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 52px;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .hero-content a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #d4af37;
+            color: #000;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .hero-content .btn-catalogo:hover {
+            background-color: #b8962e;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        /* ===== DESTACADOS ===== */
+        .destacados {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .perfume {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .perfume-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .perfume-image {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            /* Para que la imagen no se corte */
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+
+        .perfume-info {
+            padding: 20px;
+        }
+
+        .perfume img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .perfume h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .perfume p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        /* ===== FOOTER COMPLETO ===== */
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 50px 40px 25px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .footer h3 {
+            color: #d4af37;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .footer p,
+        .footer a {
+            font-size: 14px;
+            color: #ccc;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer a:hover {
+            color: #d4af37;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 35px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        /* ===== CARRITO ===== */
+        #cart {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 280px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            display: none;
+            z-index: 999;
+        }
+
+        #cart h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        #cart ul {
+            list-style: none;
+            padding: 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .cart-item span {
+            flex: 1;
+        }
+
+        .cart-controls {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cart-controls button {
+            background: #d4af37;
+            border: none;
+            padding: 3px 7px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        .cart-controls .remove {
+            background: #c0392b;
+            color: #fff;
+        }
+
+        #cart>button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            background: #d4af37;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #cart button {
+            width: 100%;
+            margin-top: 8px;
+            padding: 10px;
+            background: #d4af37;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* ===== TARJETAS PERFUME COMPACTAS ===== */
+        .perfume-card {
+            width: 100%;
+            /* Ocupa todo el ancho de la columna del grid */
+            background: #fff;
+            border-radius: 20px;
+            /* Bordes más redondeados en la tarjeta */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            /* Para que el contenido respete los bordes */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .perfume-card img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            /* Mantiene la imagen cuadrada siempre */
+            object-fit: contain;
+            /* Mantiene la proporción */
+            padding: 10px;
+            /* Espacio interno para que respire */
+            background: #fff;
+            border-radius: 46px;
+            /* Bordes redondeados en la imagen también */
+            box-sizing: border-box;
+            /* todas iguales */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 10px;
+        }
+
+        /* CONTENEDOR INFERIOR MÁS PEQUEÑO */
+        .perfume-info {
+            padding: 12px;
+            min-height: 80px;
+        }
+
+        .perfume-info h3 {
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+
+        /* PRECIO */
+        .price {
+            font-size: 14px;
+        }
+
+        /* BOTÓN COMPRAR MÁS COMPACTO */
+        .buy-btn {
+            padding: 6px 12px;
+            font-size: 13px;
+        }
+
+        .perfume-card:hover {
+            transform: translateY(-4px);
+            transition: 0.3s;
+        }
+
+        .perfumes-destacados {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            /* Adaptable automáticamente */
+            justify-items: center;
+            gap: 20px;
+        }
+
+        /* ===== BOTÓN ESTILO CATÁLOGO ===== */
+        .btn-catalogo {
+            background-color: #e1b83a;
+            /* dorado mostaza */
+            color: #000;
+            border: none;
+            padding: 10px 18px;
+            font-weight: 600;
+            font-size: 13px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-catalogo:hover {
+            background-color: #cfa72f;
+        }
+
+        .btn-catalogo {
+            box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .price-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        /* IMAGEN CONTROLADA */
+        .perfume-card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            /* NO se deforma */
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .cart-item-info p {
+            margin: 4px 0;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .cart-item-info .subtotal {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .qty-controls {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .qty-controls input {
+            width: 45px;
+            text-align: center;
+            padding: 4px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            max-width: 350px;
+            margin: 30px auto;
+            background: #d4af37;
+            border-radius: 30px;
+            padding: 8px 15px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            font-size: 16px;
+            color: #000;
+        }
+
+        .search-icon {
+            font-size: 18px;
+        }
+
+        .perfume-price {
+            display: none;
+            font-weight: bold;
+            color: #d4af37;
+            margin-top: 8px;
+        }
+
+        .header {
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            margin: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        .header-search {
+            display: flex;
+            align-items: center;
+            background: #d4af37;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        .header-search input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 140px;
+            font-size: 14px;
+        }
+
+        .header-search .search-icon {
+            margin-left: 6px;
+        }
+
+        .search-container {
+            position: relative;
+            width: 260px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 12px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            flex: 1;
+            margin: 0 8px;
+        }
+
+        .search-results {
+            position: absolute;
+            top: 110%;
+            width: 100%;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+            max-height: 320px;
+            overflow-y: auto;
+            display: none;
+            z-index: 1000;
+        }
+
+        .search-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .search-item:hover {
+            background: #f5f5f5;
+        }
+
+        .search-item img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .search-info h4 {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .search-info .old-price {
+            text-decoration: line-through;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .search-info .price {
+            color: #000;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .search-info .discount {
+            color: green;
+            font-size: 12px;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-wrapper">
+        <!-- CARRITO FLOTANTE -->
+        <div id="cart">
+            <h3>🛒 Tu carrito</h3>
+            <ul id="cart-items"></ul>
+            <div id="cart-total-container" style="margin-top: 15px; font-weight: bold; text-align: right;">
+                Total: <span id="cart-total">0</span> COP
+            </div>
+
+            <button onclick="goToCart()">Ver carrito</button>
+            <button onclick="checkout()">Finalizar compra</button>
+        </div>
+
+
+
+        <header>
+            <div class="header-left">
+                <span class="brand-name">Perfumería J y A</span>
+            </div>
+            <div class="header-center">
+                <img src="sinfondo2.png" alt="Logo Perfumería J y A">
+            </div>
+            <nav class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="contacto.html">Contacto</a>
+
+                <div class="header-search">
+                    <input type="text" id="headerSearchInput" placeholder="Buscar...">
+                    <span class="search-icon" onclick="toggleSearch()">🔍</span>
+                </div>
+                <div class="search-dropdown" id="searchDropdown"></div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Perfumería J y A</h1>
+                <p>
+                    Perfumería exclusiva especializada en fragancias
+                    que reflejan elegancia, carácter y distinción.
+                </p>
+                <a href="catalogo.html">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Algunas de nuestras fragancias</h2>
+            <section class="perfumes-destacados">
+
+                <!-- PERFUME 1 -->
+                <div class="perfume-card" data-name="Amber Oud Gold" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Amber Oud Gold&price=80000&img=amberoud.png'">
+                    <img src="amberoud.png" alt="Amber Oud Gold">
+
+                    <div class="perfume-info">
+                        <h3>Amber Oud Gold</h3>
+                        <div class="price-action">
+                            <span class="price">COP $80.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Amber Oud Gold', 80000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 2 (CENTRO) -->
+                <div class="perfume-card" data-name="Jean Paul Le Beau Le Parfum" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Le Beau Le Parfum&price=80000&img=jpg%20le%20beau.png'">
+                    <img src="jpg le beau.png" alt="Le Beau Le Parfum">
+
+                    <div class="perfume-info">
+                        <h3>Jean Paul Le Beau Le Parfum</h3>
+                        <div class="price-action">
+                            <span class="price">COP $80.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Le Beau Le Parfum', 80000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 3 -->
+                <div class="perfume-card" data-name="212 Carolina Herrera" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=212 Carolina Herrera&price=70000&img=ch.png'">
+                    <img src="ch.png" alt="212 Carolina Herrera">
+
+                    <div class="perfume-info">
+                        <h3>212 Carolina Herrera</h3>
+                        <div class="price-action">
+                            <span class="price">COP $70.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('212 Carolina Herrera', 70000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 4 -->
+                <div class="perfume-card" data-name="Khamrah Qahwa" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Khamrah Qahwa&price=90000&img=khamrah.png'">
+                    <img src="khamrah.png" alt=" Khamrah">
+
+                    <div class="perfume-info">
+                        <h3>Khamrah Qahwa</h3>
+                        <div class="price-action">
+                            <span class="price">COP $90.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Khamrah Qahwa', 90000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FILA 2 -->
+                <!-- PERFUME 5 -->
+                <div class="perfume-card" data-name="Lattafa Honor y Gloria" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Lattafa Honor y Gloria&price=80000&img=lataffahyg.png'">
+                    <img src="lataffahyg.png" alt="Latafa Hyg">
+                    <div class="perfume-info">
+                        <h3>Lattafa Honor y Gloria</h3>
+                        <div class="price-action">
+                            <span class="price">COP $80.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Latafa Hyg', 80000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 6 -->
+                <div class="perfume-card" data-name="Stronger With You Intensly" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Stronger With You Intensly&price=60000&img=Strongerintensly.png'">
+                    <img src="Strongerintensly.png" alt="Stronger Intensly">
+                    <div class="perfume-info">
+                        <h3>Stronger With You Intensly</h3>
+                        <div class="price-action">
+                            <span class="price">COP $60.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Stronger With You Intensly', 60000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 7 -->
+                <div class="perfume-card" data-name="Bharara King" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Bharara King&price=80000&img=bhararak.png'">
+                    <img src="bhararak.png" alt="Bhararak King">
+                    <div class="perfume-info">
+                        <h3>Bharara King</h3>
+                        <div class="price-action">
+                            <span class="price">COP $80.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Bhararak King', 80000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 8 -->
+                <div class="perfume-card" data-name="Invictus Platinum" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Invictus Platinum&price=55000&img=invictusp.png'">
+                    <img src="invictusp.png" alt="Invictus Platinum">
+                    <div class="perfume-info">
+                        <h3>Invictus Platinum</h3>
+                        <div class="price-action">
+                            <span class="price">COP $55.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Invictus Platinum', 55000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FILA 3 -->
+                <!-- PERFUME 9 -->
+                <div class="perfume-card" data-name="Phantom Black Men" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Phantom Black Men&price=60000&img=phantonb.png'">
+                    <img src="phantonb.png" alt="Phantom Black Men">
+                    <div class="perfume-info">
+                        <h3>Phantom Black Men</h3>
+                        <div class="price-action">
+                            <span class="price">COP $60.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Phantom Black Men', 60000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 10 -->
+                <div class="perfume-card" data-name="Versace Eros Flame" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Versace Eros Flame&price=55000&img=versaceflame.png'">
+                    <img src="versaceflame.png" alt="Versace Eros Flame">
+                    <div class="perfume-info">
+                        <h3>Versace Eros Flame</h3>
+                        <div class="price-action">
+                            <span class="price">COP $55.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Versace Eros Flame', 55000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 11 -->
+                <div class="perfume-card" data-name="Hugo Boss Unlimited Men" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Hugo Boss Unlimited Men&price=55000&img=hugoboss.png'">
+                    <img src="hugoboss.png" alt="Hugo Boss Unlimited Men">
+                    <div class="perfume-info">
+                        <h3>Hugo Boss Unlimited Men</h3>
+                        <div class="price-action">
+                            <span class="price">COP $55.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Hugo Boss Unlimited Men', 55000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERFUME 12 -->
+                <div class="perfume-card" data-name="Scandal Men" style="cursor: pointer;"
+                    onclick="window.location.href='producto.html?name=Scandal Men&price=55000&img=scandal.png'">
+                    <img src="scandal.png" alt="Scandal Men">
+                    <div class="perfume-info">
+                        <h3>Scandal Men</h3>
+                        <div class="price-action">
+                            <span class="price">COP $55.000</span>
+                            <button class="btn-catalogo buy-btn"
+                                onclick="event.stopPropagation(); addToCart('Scandal Men', 55000)">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="catalogo.html" class="btn-catalogo" style="padding: 12px 30px; font-size: 16px;">Ver todos</a>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Marca -->
+                <div>
+                    <h3>Perfumería J y A</h3>
+                    <p>
+                        Perfumería exclusiva especializada en fragancias
+                        que reflejan elegancia, carácter y distinción.
+                    </p>
+                </div>
+
+                <!-- Enlaces -->
+                <div>
+                    <h3>Enlaces</h3>
+                    <p><a href="index.html">Inicio</a></p>
+                    <p><a href="perfumes.html">Perfumes</a></p>
+                    <p><a href="contacto.html">Contacto</a></p>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h3>Contacto</h3>
+                    <p>📍Bogotá, Colombia</p>
+                    <p>📲 WhatsApp: +57 310 649 1997</p>
+                </div>
+
+                <!-- Confianza -->
+                <div>
+                    <h3>Confianza</h3>
+                    <p>✔ Calidad garantizada</p>
+                    <p>✔ Atención personalizada</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 Perfumería J y A — Todos los derechos reservados
+            </div>
+        </footer>
+    </div> <!-- Cerrando mobile-wrapper -->
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        function saveCart() {
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+
+        function addToCart(product, price) {
+            const item = cart.find(p => p.name === product);
+
+            if (item) {
+                item.quantity++;
+            } else {
+                cart.push({ name: product, price: price, quantity: 1 });
+            }
+
+            saveCart();
+            updateCart();
+            document.getElementById("cart").style.display = "block";
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById("cart-items");
+            const cartTotalElement = document.getElementById("cart-total");
+
+            if (!cartItems) return;
+
+            cartItems.innerHTML = "";
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                // Ensure price is treated as a number
+                const price = Number(item.price) || 0;
+                const subtotal = price * item.quantity;
+                total += subtotal;
+
+                const li = document.createElement("li");
+                li.className = "cart-item";
+                // Add some flex styling for better layout if needed, or rely on existing CSS
+                li.style.flexDirection = "column";
+                li.style.alignItems = "flex-start";
+
+                li.innerHTML = `
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <span style="font-weight: bold;">${item.name}</span>
+                <span style="font-size: 0.9em;">$${price.toLocaleString()}</span>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                 <div class="cart-controls">
+                    <button onclick="changeQuantity(${index}, -1)">-</button>
+                    <input type="number" min="1" value="${item.quantity}" 
+                           onchange="setQuantity(${index}, this.value)"
+                           style="width: 35px; padding: 2px; text-align: center; border: 1px solid #ccc; border-radius: 4px;">
+                    <button onclick="changeQuantity(${index}, 1)">+</button>
+                </div>
+                <div style="font-weight: bold;">
+                    $${subtotal.toLocaleString()}
+                </div>
+                <button class="remove" onclick="removeItem(${index})" style="margin-left: 5px; width: auto; padding: 2px 6px;">x</button>
+            </div>
+        `;
+                cartItems.appendChild(li);
+            });
+
+            if (cartTotalElement) {
+                cartTotalElement.textContent = total.toLocaleString();
+            }
+
+            if (cart.length === 0) {
+                document.getElementById("cart").style.display = "none";
+            } else {
+                document.getElementById("cart").style.display = "block";
+            }
+        }
+
+        function setQuantity(index, value) {
+            const qty = parseInt(value);
+            if (qty > 0) {
+                cart[index].quantity = qty;
+            } else {
+                // If invalid input, reset to 1 or remove? Let's reset to 1 for safety
+                cart[index].quantity = 1;
+            }
+            saveCart();
+            updateCart();
+        }
+
+        function changeQuantity(index, change) {
+            cart[index].quantity += change;
+            if (cart[index].quantity <= 0) cart.splice(index, 1);
+            saveCart();
+            updateCart();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            saveCart();
+            updateCart();
+        }
+
+        function goToCart() {
+            window.location.href = "carrito.html";
+        }
+
+        function checkout() {
+            let message = "Hola, quiero comprar los siguientes perfumes:%0A";
+            let total = 0;
+            cart.forEach(item => {
+                const subtotal = item.price * item.quantity;
+                total += subtotal;
+                message += `- ${item.name} (x${item.quantity}) - $${subtotal.toLocaleString()}%0A`;
+            });
+            message += `%0ATotal: $${total.toLocaleString()}`;
+
+            window.open("https://wa.me/573106491997?text=" + message, "_blank");
+        }
+
+        // Initialize cart on load
+        updateCart();
+    </script>
+    <script src="cart.js"></script>
+    <script src="lupa.js"></script>
+</body>
+
+</html>

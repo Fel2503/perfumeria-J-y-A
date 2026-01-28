@@ -1,0 +1,954 @@
+ /* CSS RESET AND STYLES */
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     overflow-x: hidden;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ .mobile-wrapper {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     width: 100%;
+ }
+
+ .mobile-wrapper>section,
+ .mobile-wrapper>main {
+     flex: 1;
+ }
+
+ /* ===== CONTACTO ===== */
+ .contact-section {
+     max-width: 1100px;
+     margin: 60px auto;
+     padding: 0 20px;
+     text-align: center;
+ }
+
+ .contact-section h2 {
+     font-family: 'Lobster', cursive;
+     font-size: 36px;
+     margin-bottom: 10px;
+ }
+
+ .contact-intro {
+     max-width: 600px;
+     margin: 0 auto 40px;
+     color: #555;
+ }
+
+ .contact-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 40px;
+     text-align: left;
+ }
+
+ /* INFO */
+ .contact-info {
+     background: #fafafa;
+     padding: 30px;
+     border-radius: 10px;
+ }
+
+ .contact-info h3 {
+     margin-bottom: 20px;
+ }
+
+ .contact-info p {
+     margin-bottom: 15px;
+     font-size: 15px;
+ }
+
+ .social-links a {
+     display: inline-block;
+     margin-right: 10px;
+     color: #d4af37;
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+ /* FORM */
+ .contact-form {
+     background: #fff;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
+
+ .contact-form h3 {
+     margin-bottom: 20px;
+ }
+
+ .contact-form form {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     margin-bottom: 15px;
+     padding: 12px;
+     border-radius: 6px;
+     border: 1px solid #ccc;
+     font-size: 14px;
+ }
+
+ .contact-form textarea {
+     resize: none;
+     height: 120px;
+ }
+
+
+ /* ===== CONTACTO (MISMO ESTILO INDEX) ===== */
+
+ .contact-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 40px;
+     max-width: 1000px;
+     margin: 40px auto 0;
+ }
+
+ .contact-card {
+     background: #fff;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ }
+
+ .contact-card h3 {
+     margin-bottom: 20px;
+ }
+
+ .contact-form {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     margin-bottom: 15px;
+     padding: 12px;
+     border-radius: 6px;
+     border: 1px solid #ccc;
+     font-size: 14px;
+ }
+
+ .contact-form textarea {
+     resize: none;
+     height: 120px;
+ }
+
+
+ .btn-comprar {
+     display: inline-block;
+     margin-top: 15px;
+     padding: 10px 25px;
+     background-color: #d4af37;
+     color: #000;
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 5px;
+     transition: background 0.3s ease;
+ }
+
+ .btn-comprar:hover {
+     background-color: #b8962e;
+ }
+
+ body {
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #fafafa;
+     color: #333;
+ }
+
+ /* ===== HEADER ===== */
+ header {
+     background-color: #222;
+     padding: 12px 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .header-left {
+     display: flex;
+     align-items: center;
+ }
+
+ .brand-name {
+     color: #d4af37;
+     font-size: 24px;
+     font-family: 'Lobster', cursive;
+ }
+
+ .header-center {
+     text-align: center;
+ }
+
+ /* Cambia el tamaño de la imagen aquí / Change image size here */
+ .header-center img {
+     height: 35px;
+     /* Ajusta este valor según prefieras / Adjust this value as preferred */
+     width: auto;
+ }
+
+ .header-right {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ nav a {
+     color: #fff;
+     text-decoration: none;
+     margin-left: 20px;
+     font-weight: bold;
+ }
+
+ nav a:hover {
+     color: #d4af37;
+ }
+
+ /* ===== HERO ===== */
+ .hero {
+     background: linear-gradient(rgba(0, 0, 0, 0.7),
+             rgba(0, 0, 0, 0.7)),
+         url("head.png") center/cover no-repeat;
+     height: 75vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     color: #fff;
+     padding: 20px;
+ }
+
+ .hero-content img {
+     width: 220px;
+     max-width: 70%;
+     margin-bottom: 20px;
+ }
+
+ .hero-content h1 {
+     font-size: 52px;
+     font-family: 'Lobster', cursive;
+     margin-bottom: 10px;
+ }
+
+ .hero-content p {
+     font-size: 20px;
+     max-width: 600px;
+     margin: auto;
+ }
+
+ .hero-content a {
+     display: inline-block;
+     margin-top: 25px;
+     padding: 12px 30px;
+     background-color: #d4af37;
+     color: #000;
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 5px;
+ }
+
+ /* ===== SECTIONS ===== */
+ section {
+     padding: 30px 40px 60px;
+     /* Reduced top padding from 60px to 30px */
+     max-width: 1200px;
+     margin: auto;
+ }
+
+ section h2 {
+     text-align: center;
+     margin-bottom: 20px;
+     /* Reduced from 40px */
+     font-size: 32px;
+ }
+
+ /* ===== DESTACADOS ===== */
+ .destacados {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 25px;
+ }
+
+ .perfume {
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+     text-align: center;
+     padding: 20px;
+ }
+
+ .perfume img {
+     width: 100%;
+     border-radius: 6px;
+ }
+
+ .perfume h3 {
+     margin-top: 15px;
+     font-size: 20px;
+ }
+
+ .perfume p {
+     font-size: 15px;
+     color: #555;
+ }
+
+ /* ===== FOOTER COMPLETO ===== */
+ .footer {
+     background-color: #222;
+     color: #fff;
+     padding: 50px 40px 25px;
+ }
+
+ .footer-container {
+     max-width: 1200px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     gap: 30px;
+ }
+
+ .footer h3 {
+     color: #d4af37;
+     font-family: 'Lobster', cursive;
+     margin-bottom: 15px;
+     font-size: 22px;
+ }
+
+ .footer p,
+ .footer a {
+     font-size: 14px;
+     color: #ccc;
+     text-decoration: none;
+     line-height: 1.6;
+ }
+
+ .footer a:hover {
+     color: #d4af37;
+ }
+
+ .footer-bottom {
+     text-align: center;
+     margin-top: 35px;
+     border-top: 1px solid #444;
+     padding-top: 15px;
+     font-size: 13px;
+     color: #aaa;
+ }
+
+ /* ===== CARRITO ===== */
+ #cart {
+     position: fixed;
+     right: 20px;
+     bottom: 20px;
+     width: 280px;
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     padding: 15px;
+     display: none;
+     z-index: 999;
+ }
+
+ #cart h3 {
+     margin-top: 0;
+     color: #222;
+ }
+
+ #cart ul {
+     list-style: none;
+     padding: 0;
+     max-height: 200px;
+     overflow-y: auto;
+ }
+
+ .cart-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 14px;
+     margin-bottom: 10px;
+ }
+
+ .cart-item span {
+     flex: 1;
+ }
+
+ .cart-controls {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+ }
+
+ .cart-controls button {
+     background: #d4af37;
+     border: none;
+     padding: 3px 7px;
+     cursor: pointer;
+     font-weight: bold;
+     border-radius: 3px;
+ }
+
+ .cart-controls .remove {
+     background: #c0392b;
+     color: #fff;
+ }
+
+ #cart>button {
+     width: 100%;
+     margin-top: 10px;
+     padding: 10px;
+     background: #d4af37;
+     border: none;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+
+ #cart button {
+     width: 100%;
+     margin-top: 8px;
+     padding: 10px;
+     background: #d4af37;
+     border: none;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+
+ /* ===== TARJETAS PERFUME COMPACTAS ===== */
+ .perfume-card {
+     width: 100%;
+     /* Ocupa todo el ancho de la columna del grid */
+     background: #fff;
+     border-radius: 20px;
+     /* Bordes más redondeados en la tarjeta */
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     /* Para que el contenido respete los bordes */
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .perfume-card img {
+     width: 100%;
+     height: auto;
+     aspect-ratio: 1 / 1;
+     /* Mantiene la imagen cuadrada siempre */
+     object-fit: contain;
+     /* Mantiene la proporción */
+     padding: 10px;
+     /* Espacio interno para que respire */
+     background: #fff;
+     border-radius: 46px;
+     /* Bordes redondeados en la imagen también */
+     box-sizing: border-box;
+     /* todas iguales */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #fff;
+     padding: 10px;
+ }
+
+ /* CONTENEDOR INFERIOR MÁS PEQUEÑO */
+ .perfume-info {
+     padding: 12px;
+     min-height: 80px;
+ }
+
+ .perfume-info h3 {
+     font-size: 14px;
+     margin-bottom: 22px;
+ }
+
+ /* PRECIO */
+ .price {
+     font-size: 14px;
+ }
+
+ /* BOTÓN COMPRAR MÁS COMPACTO */
+ .buy-btn {
+     padding: 6px 12px;
+     font-size: 13px;
+ }
+
+ .perfume-card:hover {
+     transform: translateY(-4px);
+     transition: 0.3s;
+ }
+
+ .perfumes-destacados {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     /* Adaptable automáticamente */
+     justify-items: center;
+     gap: 20px;
+ }
+
+ /* ===== BOTÓN ESTILO CATÁLOGO ===== */
+ .btn-catalogo {
+     background-color: #e1b83a;
+     /* dorado mostaza */
+     color: #000;
+     border: none;
+     padding: 10px 18px;
+     font-weight: 600;
+     font-size: 13px;
+     border-radius: 6px;
+     cursor: pointer;
+     text-decoration: none;
+     display: inline-block;
+     transition: background-color 0.2s ease;
+ }
+
+ .btn-catalogo:hover {
+     background-color: #cfa72f;
+ }
+
+ .btn-catalogo {
+     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+ }
+
+ .price-action {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 10px;
+ }
+
+ /* IMAGEN CONTROLADA */
+ .perfume-card img {
+     max-width: 100%;
+     max-height: 100%;
+     object-fit: contain;
+     /* NO se deforma */
+ }
+
+ /* ===== CONTACTO SIN FORMULARIO ===== */
+
+ .contacto-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 30px;
+     max-width: 1000px;
+     margin: 20px auto 40px;
+     /* Reduced top margin from 40px to 20px */
+ }
+
+ .contacto-box {
+     background: #fff;
+     padding: 30px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     text-align: center;
+ }
+
+ .contacto-box h3 {
+     margin-bottom: 10px;
+ }
+
+ .contacto-box p {
+     color: #555;
+     margin-bottom: 10px;
+ }
+
+ /* CTA */
+ .contacto-cta {
+     margin-top: 60px;
+     padding: 40px;
+     background: #fafafa;
+     border-radius: 12px;
+     text-align: center;
+ }
+
+ .contacto-cta h3 {
+     margin-bottom: 10px;
+ }
+
+
+ .section-subtitle {
+     text-align: center;
+     /* 🔥 ESTO LO CENTRA */
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ /* ===== BOX REDES SOCIALES ===== */
+
+ .social-box {
+     max-width: 900px;
+     margin: 50px auto;
+     padding: 35px;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     text-align: center;
+ }
+
+ .social-box h3 {
+     margin-bottom: 10px;
+ }
+
+ .social-box p {
+     color: #555;
+     margin-bottom: 25px;
+ }
+
+ .social-icons {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .social {
+     padding: 10px 18px;
+     border-radius: 20px;
+     font-weight: bold;
+     text-decoration: none;
+     color: #000;
+     background: #f2f2f2;
+     transition: all 0.3s ease;
+ }
+
+ .social:hover {
+     transform: translateY(-3px);
+ }
+
+ /* Colores sutiles por red */
+ .social.instagram:hover {
+     background: #f7c5d7;
+ }
+
+ .social.facebook:hover {
+     background: #c5d9f7;
+ }
+
+ .social.whatsapp:hover {
+     background: #c8f7d2;
+ }
+
+
+ .header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 15px 40px;
+ }
+
+ .header-search {
+     display: flex;
+     align-items: center;
+     background: #d4af37;
+     padding: 6px 12px;
+     border-radius: 20px;
+ }
+
+ .header-search input {
+     border: none;
+     outline: none;
+     background: transparent;
+     width: 140px;
+     font-size: 14px;
+ }
+
+ .header-search .search-icon {
+     margin-left: 6px;
+     cursor: pointer;
+     font-size: 18px;
+ }
+
+ .search-container {
+     position: relative;
+     width: 260px;
+ }
+
+ .search-box {
+     display: flex;
+     align-items: center;
+     background: #fff;
+     border-radius: 12px;
+     padding: 8px 12px;
+     border: 1px solid #ccc;
+ }
+
+ .search-box input {
+     border: none;
+     outline: none;
+     flex: 1;
+     margin: 0 8px;
+ }
+
+ .search-results {
+     position: absolute;
+     top: 110%;
+     width: 100%;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+     max-height: 320px;
+     overflow-y: auto;
+     display: none;
+     z-index: 1000;
+ }
+
+ .search-item {
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     cursor: pointer;
+     gap: 10px;
+ }
+
+ .search-item:hover {
+     background: #f5f5f5;
+ }
+
+ .search-item img {
+     width: 45px;
+     height: 45px;
+     object-fit: cover;
+     border-radius: 6px;
+ }
+
+ .search-info h4 {
+     font-size: 14px;
+     margin: 0;
+ }
+
+ .search-info .old-price {
+     text-decoration: line-through;
+     font-size: 12px;
+     color: #999;
+ }
+
+ .search-info .price {
+     color: #000;
+     font-weight: bold;
+     font-size: 13px;
+ }
+
+ .search-info .discount {
+     color: green;
+     font-size: 12px;
+ }
+
+ .pagination {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     margin: 40px 0;
+ }
+
+ .pagination button {
+     border: 2px solid #d4af37;
+     background: transparent;
+     padding: 6px 14px;
+     border-radius: 20px;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ .pagination button:hover {
+     background: #d4af37;
+ }
+
+ .page-btn {
+     border: none;
+     background: transparent;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ .page-btn.active {
+     color: #d4af37;
+ }
+
+ #cart {
+     position: fixed;
+     right: 20px;
+     bottom: 20px;
+     width: 280px;
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     padding: 15px;
+     display: none;
+     z-index: 999;
+ }
+
+ #cart h3 {
+     margin-top: 0;
+     color: #222;
+ }
+
+ #cart ul {
+     list-style: none;
+     padding: 0;
+     max-height: 200px;
+     overflow-y: auto;
+ }
+
+ .cart-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 14px;
+     margin-bottom: 10px;
+ }
+
+ .cart-item span {
+     flex: 1;
+ }
+
+ .cart-controls {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+ }
+
+ .cart-controls button {
+     background: #d4af37;
+     border: none;
+     padding: 3px 7px;
+     cursor: pointer;
+     font-weight: bold;
+     border-radius: 3px;
+ }
+
+ .cart-controls .remove {
+     background: #c0392b;
+     color: #fff;
+ }
+
+ #cart>button {
+     width: 100%;
+     margin-top: 10px;
+     padding: 10px;
+     background: #d4af37;
+     border: none;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+
+ #cart button {
+     width: 100%;
+     margin-top: 8px;
+     padding: 10px;
+     background: #d4af37;
+     border: none;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+
+ .header-search {
+     background: #d4af37;
+     padding: 6px 12px;
+     border-radius: 20px;
+     display: flex;
+     align-items: center;
+ }
+
+ .header-search input {
+     border: none;
+     background: transparent;
+     outline: none;
+     width: 140px;
+ }
+
+ header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ button,
+ .btn-comprar {
+     min-height: 44px;
+ }
+
+ /* ===============================
+   MOBILE RESET (RESCATE)
+================================ */
+ @media (max-width: 768px) {
+
+     /* 1. Logo y Navegación un poquito más grandes */
+     .brand-name {
+         font-size: 28px !important;
+     }
+
+     .header-center img {
+         height: 45px !important;
+     }
+
+     nav a {
+         font-size: 15px !important;
+         margin-left: 10px !important;
+     }
+
+     /* 2. Acercar el Hero */
+     .hero {
+         height: 45vh !important;
+         padding: 30px 20px !important;
+     }
+
+     .hero-content h1 {
+         font-size: 40px !important;
+     }
+
+     .hero-content p {
+         font-size: 18px !important;
+     }
+
+     /* 3. Productos: 2 columnas para que se vean de cerca */
+     .perfumes-destacados,
+     .destacados,
+     .perfume-grid {
+         grid-template-columns: repeat(2, 1fr) !important;
+         gap: 15px !important;
+         padding: 0 15px !important;
+         justify-content: center !important;
+         margin: 0 auto !important;
+     }
+
+     /* 4. Acercar nombres y precios sutilmente */
+     .perfume-info h3 {
+         font-size: 15px !important;
+         margin-bottom: 10px !important;
+     }
+
+     .price {
+         font-size: 15px !important;
+         font-weight: bold !important;
+     }
+
+     .buy-btn,
+     .btn-buy,
+     .btn-comprar {
+         padding: 8px 12px !important;
+         font-size: 13px !important;
+     }
+
+     /* 5. Espaciado general */
+     section {
+         padding: 40px 20px !important;
+     }
+
+     section h2 {
+         font-size: 28px !important;
+     }
+ }

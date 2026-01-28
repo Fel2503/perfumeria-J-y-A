@@ -932,111 +932,204 @@
    MOBILE RESET (RESCATE)
 ================================ */
  @media (max-width: 768px) {
+     @media (max-width: 768px) {
 
-     /* 1. Logo y Navegación un poquito más grandes */
-     header {
-         padding: 65px 40px !important;
+         body {
+             font-size: 14px;
+         }
+
+         header {
+             padding: 10px;
+             text-align: center;
+         }
+
+         nav ul {
+             display: flex;
+             flex-direction: column;
+             gap: 10px;
+         }
+
+         nav ul li {
+             display: block;
+         }
+
+         nav ul li a {
+             padding: 10px;
+             display: block;
+         }
+
+         .hero {
+             height: auto;
+             padding: 30px 15px;
+         }
+
+         .hero h1 {
+             font-size: 1.8rem;
+         }
+
+         .hero p {
+             font-size: 1rem;
+         }
+
+         .products,
+         .catalogo,
+         .grid {
+             display: flex;
+             flex-direction: column;
+             gap: 20px;
+         }
+
+         .product,
+         .card {
+             width: 100%;
+         }
+
+         footer {
+             text-align: center;
+             padding: 20px;
+         }
      }
 
-     .brand-name {
-         font-size: 40px !important;
+     @media (max-width: 480px) {
+
+         body {
+             font-size: 13px;
+         }
+
+         .hero h1 {
+             font-size: 1.5rem;
+         }
+
+         nav ul {
+             gap: 5px;
+         }
+
+         nav ul li a {
+             font-size: 14px;
+         }
      }
+
 
      .header-center img {
-         height: 65px !important;
+         height: 65px;
      }
 
      nav a {
-         font-size: 20px !important;
-         margin-left: 15px !important;
+         font-size: 20px;
+         margin-left: 15px;
      }
 
      .header-search {
-         padding: 10px 18px !important;
+         padding: 10px 18px;
      }
 
      .header-search input {
-         font-size: 16px !important;
-         width: 160px !important;
+         font-size: 16px;
+         width: 160px;
      }
 
      /* 2. Acercar el Hero */
      .hero {
-         height: 60vh !important;
-         padding: 40px 20px !important;
+         height: 60vh;
+         padding: 40px 20px;
      }
 
      .hero-content h1 {
-         font-size: 45px !important;
+         font-size: 45px;
      }
 
      .hero-content p {
-         font-size: 20px !important;
+         font-size: 20px;
      }
 
      /* 3. Productos: 2 columnas para que se vean de cerca */
      .perfumes-destacados,
      .destacados,
      .perfume-grid {
-         grid-template-columns: repeat(2, 1fr) !important;
-         gap: 15px !important;
-         padding: 0 15px !important;
-         justify-content: center !important;
-         margin: 0 auto !important;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 15px;
+         padding: 0 15px;
+         justify-content: center;
+         margin: 0 auto;
      }
 
      /* 4. Acercar nombres y precios sutilmente */
      .perfume-info h3 {
-         font-size: 18px !important;
-         margin-bottom: 12px !important;
+         font-size: 18px;
+         margin-bottom: 12px;
      }
 
      .price {
-         font-size: 17px !important;
-         font-weight: bold !important;
+         font-size: 17px;
+         font-weight: bold;
      }
 
      .buy-btn,
      .btn-buy,
      .btn-comprar {
-         padding: 10px 16px !important;
-         font-size: 15px !important;
+         padding: 10px 16px;
+         font-size: 15px;
      }
 
      /* 5. Espaciado general */
      section {
-         padding: 40px 20px !important;
+         padding: 40px 20px;
      }
 
      section h2 {
-         font-size: 30px !important;
+         font-size: 30px;
      }
  }
 
  /* ===============================
     AJUSTE PARA PANTALLAS PEQUEÑAS (375px)
  ================================ */
- @media (max-width: 375px) {
+ @media screen and (max-width: 375px) {
+
+     /* HEADER */
      .brand-name {
-         font-size: 70px !important;
+         font-size: 13px !important;
+         white-space: normal;
+         /* CLAVE */
+         text-align: center;
      }
 
-     .header-center img {
-         height: 35px !important;
+     .header-left {
+         max-width: 100%;
+     }
+
+     /* HERO */
+     .hero,
+     .hero-catalog {
+         height: auto !important;
+         min-height: unset !important;
+         padding: 30px 15px !important;
      }
 
      .hero-content h1 {
-         font-size: 32px !important;
+         font-size: 30px !important;
      }
 
-     .hero {
-         height: 60vh !important;
+     .hero-content p {
+         font-size: 16px !important;
      }
 
-     .perfume-grid {
-         grid-template-columns: 1fr !important;
+     /* CATÁLOGO */
+     .perfume-grid,
+     .perfumes-destacados,
+     .destacados {
+         display: grid !important;
+         grid-template-columns: repeat(3, 1fr) !important;
+         gap: 10px !important;
      }
+
+     /* TARJETAS */
+     .perfume-card {
+         width: 100%;
+     }
+
  }
+
 
  /* ===============================
     OPTIMIZACIÓN PARA COMPUTADOR (DESKTOP)
@@ -1046,67 +1139,67 @@
      section,
      .catalog-section,
      .contact-section {
-         max-width: 1400px !important;
-         margin-left: auto !important;
-         margin-right: auto !important;
-         padding: 80px 60px !important;
+         max-width: 1400px;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 80px 60px;
      }
 
      .brand-name {
-         font-size: 35px !important;
+         font-size: 35px;
      }
 
      .header-center img {
-         height: 80px !important;
+         height: 80px;
      }
 
      nav a {
-         font-size: 18px !important;
-         margin-left: 30px !important;
+         font-size: 18px;
+         margin-left: 30px;
      }
 
      .hero,
      .hero-catalog {
-         height: 80vh !important;
-         min-height: 500px !important;
+         height: 80vh;
+         min-height: 500px;
      }
 
      .hero-content h1 {
-         font-size: 80px !important;
+         font-size: 80px;
      }
 
      .hero-content p {
-         font-size: 22px !important;
+         font-size: 22px;
      }
 
      /* Grilla de productos en desktop */
      .perfumes-destacados,
      .destacados,
      .perfume-grid {
-         grid-template-columns: repeat(3, 1fr) !important;
-         gap: 30px !important;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 30px;
      }
 
      .perfume-card:hover {
-         transform: translateY(-10px) !important;
-         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
-         transition: 0.3s ease !important;
+         transform: translateY(-10px);
+         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+         transition: 0.3s ease;
      }
 
      .footer-container {
-         max-width: 1400px !important;
-         grid-template-columns: repeat(4, 1fr) !important;
+         max-width: 1400px;
+         grid-template-columns: repeat(4, 1fr);
      }
 
      /* Contacto en desktop */
      .contacto-grid {
-         grid-template-columns: repeat(2, 1fr) !important;
-         gap: 40px !important;
-         max-width: 1200px !important;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 40px;
+         max-width: 1200px;
      }
 
      .contacto-box {
-         padding: 40px !important;
+         padding: 40px;
      }
  }
 
@@ -1126,164 +1219,112 @@
      padding: 20px;
  }
 
- @media (max-width: 768px) {
 
-     body {
-         font-size: 14px;
-     }
-
-     header {
-         padding: 10px;
-         text-align: center;
-     }
-
-     nav ul {
-         display: flex;
-         flex-direction: column;
-         gap: 10px;
-     }
-
-     nav ul li {
-         display: block;
-     }
-
-     nav ul li a {
-         padding: 10px;
-         display: block;
-     }
-
-     .hero {
-         height: auto;
-         padding: 30px 15px;
-     }
-
-     .hero h1 {
-         font-size: 1.8rem;
-     }
-
-     .hero p {
-         font-size: 1rem;
-     }
-
-     .products,
-     .catalogo,
-     .grid {
-         display: flex;
-         flex-direction: column;
-         gap: 20px;
-     }
-
-     .product,
-     .card {
-         width: 100%;
-     }
-
-     footer {
-         text-align: center;
-         padding: 20px;
-     }
- }
-
- @media (max-width: 480px) {
-
-     body {
-         font-size: 13px;
-     }
-
-     .hero h1 {
-         font-size: 1.5rem;
-     }
-
-     nav ul {
-         gap: 5px;
-     }
-
-     nav ul li a {
-         font-size: 14px;
-     }
- }
-
- /* Ajuste de header para móviles pequeños */
- @media screen and (max-width: 360px) {
-     header h1 {
-         font-size: 1.3rem;
-         /* ajusta si la quieres un poco más chica */
-         line-height: 1.2;
-     }
-
-     header h2,
-     header p {
-         font-size: 0.9rem;
-     }
- }
-
- /* =========================
-   MÓVILES MUY PEQUEÑOS (320px)
-   ========================= */
  @media screen and (max-width: 320px) {
 
      /* HEADER */
-     header {
-         padding: 10px;
-     }
-
-     header h1 {
-         font-size: 1.2rem;
-         line-height: 1.2;
+     .brand-name {
+         font-size: 12px !important;
+         white-space: normal;
          text-align: center;
-     }
-
-     header p {
-         font-size: 0.85rem;
-     }
-
-     /* NAV */
-     nav {
-         flex-direction: column;
-         gap: 8px;
-     }
-
-     nav a {
-         font-size: 0.85rem;
-         padding: 6px 0;
      }
 
      /* HERO */
-     .hero {
-         padding: 20px 10px;
+     .hero,
+     .hero-catalog {
+         height: auto !important;
+         min-height: unset !important;
+         padding: 25px 10px !important;
      }
 
-     .hero h2 {
-         font-size: 1.3rem;
+     .hero-content h1 {
+         font-size: 26px !important;
      }
 
-     .hero p {
-         font-size: 0.9rem;
+     .hero-content p {
+         font-size: 14px !important;
      }
 
-     .hero button {
-         width: 100%;
-         font-size: 0.9rem;
-         padding: 10px;
+     /* CATÁLOGO */
+     .perfume-grid,
+     .perfumes-destacados,
+     .destacados {
+         display: grid !important;
+         grid-template-columns: repeat(3, 1fr) !important;
+         gap: 8px !important;
      }
 
-     /* PRODUCTOS / SECCIONES */
-     .products,
-     .cards {
-         grid-template-columns: 1fr;
-         gap: 12px;
+ }
+
+
+
+ @media screen and (max-width: 375px) {
+
+     header {
+         padding: 10px 12px;
      }
 
-     /* IMÁGENES */
-     img {
-         max-width: 100%;
-         height: auto;
+     .header-container {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: nowrap;
+         /* CLAVE */
      }
 
-     /* FOOTER */
-     footer {
-         font-size: 0.75rem;
-         text-align: center;
-         padding: 12px;
+     .header-left {
+         max-width: 45%;
+         display: flex;
+         align-items: center;
+     }
+
+     .brand-name {
+         font-size: 13px !important;
+         white-space: nowrap;
+         /* vuelve a una sola línea */
+         text-align: left;
+     }
+
+     .header-center img {
+         height: 40px;
+     }
+
+     nav {
+         display: none;
+         /* menú oculto en móviles pequeños */
+     }
+ }
+
+ @media screen and (max-width: 320px) {
+
+     header {
+         padding: 8px 10px;
+     }
+
+     .header-container {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: nowrap;
+     }
+
+     .header-left {
+         max-width: 50%;
+     }
+
+     .brand-name {
+         font-size: 12px !important;
+         white-space: nowrap;
+         text-align: left;
+     }
+
+     .header-center img {
+         height: 35px;
+     }
+
+     nav {
+         display: none;
      }
  }

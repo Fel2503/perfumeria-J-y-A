@@ -41,8 +41,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
+            position: relative;
         }
 
         .header-left {
@@ -68,6 +67,8 @@
         .header-right {
             display: flex;
             justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
         }
 
         nav a {
@@ -347,7 +348,7 @@
                 <a href="index.html">Inicio</a>
                 <a href="catalogo.html">Catalogo</a>
                 <a href="contacto.html">Contacto</a>
-                <a href="ventaspormayor.html">Ventas al por mayor</a>
+                <a href="ventaspormayor.html" style="color: #d4af37;">Ventas al por mayor</a>
 
                 <div class="header-search">
                     <input type="text" id="headerSearchInput" placeholder="Buscar...">
@@ -382,406 +383,406 @@
 
                 <!-- 1. Amber Oud Gold (Al Haramain) -->
                 <div class="perfume-card" data-brand="Al Haramain" data-name="Amber Oud Gold"
-                    onclick="window.location.href='producto.html?name=Amber Oud Gold&price=115000&img=amberoud.png'">
+                    onclick="window.location.href='producto.html?name=Amber Oud Gold&price=80000&img=amberoud.png'">
                     <img src="amberoud.png" alt="Amber Oud Gold">
                     <div class="perfume-info">
                         <h3>Amber Oud Gold</h3>
                         <div class="price-action">
-                            <span class="price">COP $115.000</span>
+                            <span class="price">COP $80.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Amber Oud Gold', 115000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Amber Oud Gold', 80000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 2. Jean Paul Le Beau Le Parfum (JPG) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier" data-name="Jean Paul Le Beau Le Parfum"
-                    onclick="window.location.href='producto.html?name=Le Beau Le Parfum&price=115000&img=jpg%20le%20beau.png'">
+                    onclick="window.location.href='producto.html?name=Le Beau Le Parfum&price=80000&img=jpg%20le%20beau.png'">
                     <img src="jpg le beau.png" alt="Le Beau Le Parfum">
                     <div class="perfume-info">
                         <h3>Jean Paul Le Beau Le Parfum</h3>
                         <div class="price-action">
-                            <span class="price">COP $115.000</span>
+                            <span class="price">COP $80.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Le Beau Le Parfum', 115000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Le Beau Le Parfum', 80000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 3. 212 Carolina Herrera (CH) -->
                 <div class="perfume-card" data-brand="Carolina Herrera" data-name="212 Carolina Herrera Men Metalica"
-                    onclick="window.location.href='producto.html?name=212 Carolina Herrera Men Metalica&price=105000&img=ch.png'">
+                    onclick="window.location.href='producto.html?name=212 Carolina Herrera Men Metalica&price=70000&img=ch.png'">
                     <img src="ch.png" alt="212 Carolina Herrera Men Metalica">
                     <div class="perfume-info">
                         <h3>212 Carolina Herrera Men Metalica</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('212 Carolina Herrera Men Metalica', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('212 Carolina Herrera Men Metalica', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 4. Khamrah Qahwa (Lattafa) -->
                 <div class="perfume-card" data-brand="Lattafa" data-name="Khamrah Qahwa 1.1"
-                    onclick="window.location.href='producto.html?name=Khamrah Qahwa 1.1&price=125000&img=khamrah.png'">
+                    onclick="window.location.href='producto.html?name=Khamrah Qahwa 1.1&price=90000&img=khamrah.png'">
                     <img src="khamrah.png" alt="Khamrah Qahwa 1.1">
                     <div class="perfume-info">
                         <h3>Khamrah Qahwa 1.1</h3>
                         <div class="price-action">
-                            <span class="price">COP $125.000</span>
+                            <span class="price">COP $90.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Khamrah Qahwa 1.1', 125000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Khamrah Qahwa 1.1', 90000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 5. Lattafa Honor y Gloria (Lattafa) -->
                 <div class="perfume-card" data-brand="Lattafa" data-name="Lattafa Honor y Gloria"
-                    onclick="window.location.href='producto.html?name=Lattafa Honor y Gloria&price=115000&img=lataffahyg.png'">
+                    onclick="window.location.href='producto.html?name=Lattafa Honor y Gloria&price=80000&img=lataffahyg.png'">
                     <img src="lataffahyg.png" alt="Lattafa Honor y Gloria">
                     <div class="perfume-info">
                         <h3>Lattafa Honor y Gloria</h3>
                         <div class="price-action">
-                            <span class="price">COP $115.000</span>
+                            <span class="price">COP $80.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Latafa Hyg', 115000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Latafa Hyg', 80000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 6. Stronger With You Intensly (Giorgio Armani) -->
                 <div class="perfume-card" data-brand="Giorgio Armani" data-name="Stronger With You Intensly"
-                    onclick="window.location.href='producto.html?name=Stronger With You Intensly&price=95000&img=Strongerintensly.png'">
+                    onclick="window.location.href='producto.html?name=Stronger With You Intensly&price=60000&img=Strongerintensly.png'">
                     <img src="Strongerintensly.png" alt="Stronger With You Intensly">
                     <div class="perfume-info">
                         <h3>Stronger With You Intensly</h3>
                         <div class="price-action">
-                            <span class="price">COP $95.000</span>
+                            <span class="price">COP $60.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Stronger With You Intensly', 95000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Stronger With You Intensly', 60000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 7. Bharara King (Bharara) -->
                 <div class="perfume-card" data-brand="Bharara" data-name="Bharara King"
-                    onclick="window.location.href='producto.html?name=Bharara King&price=115000&img=bhararak.png'">
+                    onclick="window.location.href='producto.html?name=Bharara King&price=80000&img=bhararak.png'">
                     <img src="bhararak.png" alt="Bharara King">
                     <div class="perfume-info">
                         <h3>Bharara King</h3>
                         <div class="price-action">
-                            <span class="price">COP $115.000</span>
+                            <span class="price">COP $80.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Bharara King', 115000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Bharara King', 80000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 8. Invictus Platinum (Paco Rabanne) -->
                 <div class="perfume-card" data-brand="Paco Rabanne" data-name="Invictus Platinum"
-                    onclick="window.location.href='producto.html?name=Invictus Platinum&price=90000&img=invictusp.png'">
+                    onclick="window.location.href='producto.html?name=Invictus Platinum&price=55000&img=invictusp.png'">
                     <img src="invictusp.png" alt="Invictus Platinum">
                     <div class="perfume-info">
                         <h3>Invictus Platinum</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Invictus Platinum', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Invictus Platinum', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 9. Phantom Black (Paco Rabanne) -->
                 <div class="perfume-card" data-brand="Paco Rabanne" data-name="Phantom Black Men"
-                    onclick="window.location.href='producto.html?name=Phantom Black Men&price=95000&img=phantonb.png'">
+                    onclick="window.location.href='producto.html?name=Phantom Black Men&price=60000&img=phantonb.png'">
                     <img src="phantonb.png" alt="Phantom Black Men">
                     <div class="perfume-info">
                         <h3>Phantom Black Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $95.000</span>
+                            <span class="price">COP $60.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Phantom Black Men', 95000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Phantom Black Men', 60000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 10. Versace Eros Flame (Versace) -->
                 <div class="perfume-card" data-brand="Versace" data-name="Versace Eros Flame"
-                    onclick="window.location.href='producto.html?name=Versace Eros Flame&price=90000&img=versaceflame.png'">
+                    onclick="window.location.href='producto.html?name=Versace Eros Flame&price=55000&img=versaceflame.png'">
                     <img src="versaceflame.png" alt="Versace Eros Flame">
                     <div class="perfume-info">
                         <h3>Versace Eros Flame</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Versace Eros Flame', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Versace Eros Flame', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 11. Hugo Boss Unlimited (Hugo Boss) -->
                 <div class="perfume-card" data-brand="Hugo Boss" data-name="Hugo Boss Unlimited Men"
-                    onclick="window.location.href='producto.html?name=Hugo Boss Unlimited Men&price=90000&img=hugoboss.png'">
+                    onclick="window.location.href='producto.html?name=Hugo Boss Unlimited Men&price=55000&img=hugoboss.png'">
                     <img src="hugoboss.png" alt="Hugo Boss Unlimited Men">
                     <div class="perfume-info">
                         <h3>Hugo Boss Unlimited Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Hugo Boss Unlimited Men', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Hugo Boss Unlimited Men', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 12. Scandal Men (JPG) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier" data-name="Scandal Parfum Men"
-                    onclick="window.location.href='producto.html?name=Scandal Parfum Men&price=90000&img=scandal.png'">
+                    onclick="window.location.href='producto.html?name=Scandal Parfum Men&price=55000&img=scandal.png'">
                     <img src="scandal.png" alt="Scandal Parfum Men">
                     <div class="perfume-info">
                         <h3>Scandal Parfum Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Scandal Parfum Men', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Scandal Parfum Men', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- 12. perfume (u) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier" data-name="Jean Paul Gaultier Le Male Men"
-                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Le Male Men&price=105000&img=jpglemalem.png'">
+                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Le Male Men&price=70000&img=jpglemalem.png'">
                     <img src="jpglemalem.png" alt="Jean Paul Gaultier Le Male Men">
                     <div class="perfume-info">
                         <h3>Jean Paul Gaultier Le Male Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Le Male Men', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Le Male Men', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <!-- 14. perfume (u) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier" data-name="Jean Paul Gaultier Ultra Male Men"
-                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Ultra Male Men&price=105000&img=jpgum.png'">
+                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Ultra Male Men&price=70000&img=jpgum.png'">
                     <img src="jpgum.png" alt="Jean Paul Gaultier Ultra Male Men">
                     <div class="perfume-info">
                         <h3>Jean Paul Gaultier Ultra Male Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Ultra Male Men', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Ultra Male Men', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <!-- 15. perfume (u) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier" data-name="Jean Paul Divine Fem"
-                    onclick="window.location.href='producto.html?name=Jean Paul Divine Fem&price=105000&img=jpgdf.png'">
+                    onclick="window.location.href='producto.html?name=Jean Paul Divine Fem&price=70000&img=jpgdf.png'">
                     <img src="jpgdf.png" alt="Jean Paul Divine Fem">
                     <div class="perfume-info">
                         <h3>Jean Paul Divine Fem</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Jean Paul Divine Fem', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Jean Paul Divine Fem', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <!-- 16. perfume (u) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier" data-name="Jean Paul Gaultier Navy Men"
-                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Navy Men&price=105000&img=jpgnm.png'">
+                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Navy Men&price=70000&img=jpgnm.png'">
                     <img src="jpgnm.png" alt="Jean Paul Gaultier Navy Men">
                     <div class="perfume-info">
                         <h3>Jean Paul Gaultier Navy Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Navy Men', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Navy Men', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <!-- 17. perfume (u) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier"
                     data-name="Jean Paul Gaultier Elixir Men Tipo Original"
-                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Elixir Men Tipo Original&price=105000&img=jpge.png'">
+                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Elixir Men Tipo Original&price=70000&img=jpge.png'">
                     <img src="jpge.png" alt="Jean Paul Gaultier Elixir Men Tipo Original">
                     <div class="perfume-info">
                         <h3>Jean Paul Gaultier Elixir Men Tipo Original</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Elixir Men Tipo Original', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Elixir Men Tipo Original', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <!-- 18. perfume (u) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier" data-name="Jean Paul Gaultier Le Beau EDT Men"
-                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Le Beau EDT Men&price=108000&img=jpglb.png'">
+                    onclick="window.location.href='producto.html?name=Jean Paul Gaultier Le Beau EDT Men&price=73000&img=jpglb.png'">
                     <img src="jpglb.png" alt="Jean Paul Gaultier Le Beau EDT Men">
                     <div class="perfume-info">
                         <h3>Jean Paul Gaultier Le Beau EDT Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $108.000</span>
+                            <span class="price">COP $73.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Le Beau EDT Men', 108000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Jean Paul Gaultier Le Beau EDT Men', 73000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <!-- 19. perfume (u) -->
                 <div class="perfume-card" data-brand="Jean Paul Gaultier"
                     data-name="Jean Paul Gamuzada Le Male Parfum Men"
-                    onclick="window.location.href='producto.html?name=Jean Paul Gamuzada Le Male Parfum Men&price=115000&img=jpggl.png'">
+                    onclick="window.location.href='producto.html?name=Jean Paul Gamuzada Le Male Parfum Men&price=80000&img=jpggl.png'">
                     <img src="jpggl.png" alt="Jean Paul Gamuzada Le Male Parfum Men">
                     <div class="perfume-info">
                         <h3>Jean Paul Gamuzada Le Male Parfum Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $115.000</span>
+                            <span class="price">COP $80.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Jean Paul Gamuzada Le Male Parfum Men', 115000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Jean Paul Gamuzada Le Male Parfum Men', 80000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Odyssey" data-name="Odyssey Mega Men"
-                    onclick="window.location.href='producto.html?name=Odyssey Mega Men&price=105000&img=omm.png'">
+                    onclick="window.location.href='producto.html?name=Odyssey Mega Men&price=70000&img=omm.png'">
                     <img src="omm.png" alt="Odyssey Mega Men">
                     <div class="perfume-info">
                         <h3>Odyssey Mega Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Odyssey Mega Men', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Odyssey Mega Men', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Odyssey" data-name="Odyssey Candee Fem"
-                    onclick="window.location.href='producto.html?name=Odyssey Candee Fem&price=100000&img=ocf.png'">
+                    onclick="window.location.href='producto.html?name=Odyssey Candee Fem&price=65000&img=ocf.png'">
                     <img src="ocf.png" alt="Odyssey Candee Fem">
                     <div class="perfume-info">
                         <h3>Odyssey Candee Fem</h3>
                         <div class="price-action">
-                            <span class="price">COP $100.000</span>
+                            <span class="price">COP $65.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Odyssey Candee Fem', 100000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Odyssey Candee Fem', 65000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Odyssey" data-name="Odyssey Limoni"
-                    onclick="window.location.href='producto.html?name=Odyssey Limoni&price=100000&img=ol.png'">
+                    onclick="window.location.href='producto.html?name=Odyssey Limoni&price=65000&img=ol.png'">
                     <img src="ol.png" alt="Odyssey Limoni">
                     <div class="perfume-info">
                         <h3>Odyssey Limoni</h3>
                         <div class="price-action">
-                            <span class="price">COP $100.000</span>
+                            <span class="price">COP $65.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Odyssey Limoni', 100000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Odyssey Limoni', 65000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Odyssey" data-name="Mandarinsky 1.1 Men"
-                    onclick="window.location.href='producto.html?name=Mandarinsky 1.1 Men&price=95000&img=m1m.png'">
+                    onclick="window.location.href='producto.html?name=Mandarinsky 1.1 Men&price=60000&img=m1m.png'">
                     <img src="m1m.png" alt="Mandarinsky 1.1 Men">
                     <div class="perfume-info">
                         <h3>Mandarinsky 1.1 Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $95.000</span>
+                            <span class="price">COP $60.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Mandarinsky 1.1 Men', 95000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Mandarinsky 1.1 Men', 60000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Odyssey" data-name="Odyssey Tryant Men"
-                    onclick="window.location.href='producto.html?name=Odyssey Tryant Men&price=105000&img=otm.png'">
+                    onclick="window.location.href='producto.html?name=Odyssey Tryant Men&price=70000&img=otm.png'">
                     <img src="otm.png" alt="Odyssey Tryant Men">
                     <div class="perfume-info">
                         <h3>Odyssey Tryant Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Odyssey Tryant Men', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Odyssey Tryant Men', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Odyssey" data-name="Odyssey Home Men"
-                    onclick="window.location.href='producto.html?name=Odyssey Home Men&price=105000&img=ohm.png'">
+                    onclick="window.location.href='producto.html?name=Odyssey Home Men&price=70000&img=ohm.png'">
                     <img src="ohm.png" alt="Odyssey Home Men">
                     <div class="perfume-info">
                         <h3>Odyssey Home Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Odyssey Home Men', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Odyssey Home Men', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Odyssey" data-name="Odyssey Spectra"
-                    onclick="window.location.href='producto.html?name=Odyssey Spectra&price=105000&img=os.png'">
+                    onclick="window.location.href='producto.html?name=Odyssey Spectra&price=70000&img=os.png'">
                     <img src="os.png" alt="Odyssey Spectra">
                     <div class="perfume-info">
                         <h3>Odyssey Spectra</h3>
                         <div class="price-action">
-                            <span class="price">COP $105.000</span>
+                            <span class="price">COP $70.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Odyssey Spectra', 105000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Odyssey Spectra', 70000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Lattafa" data-name="Lattafa Oud For Glory Amethyste"
-                    onclick="window.location.href='producto.html?name=Lattafa Oud For Glory Amethyste&price=115000&img=lofg.png'">
+                    onclick="window.location.href='producto.html?name=Lattafa Oud For Glory Amethyste&price=80000&img=lofg.png'">
                     <img src="lofg.png" alt="Lattafa Oud For Glory Amethyste">
                     <div class="perfume-info">
                         <h3>Lattafa Oud For Glory Amethyste</h3>
                         <div class="price-action">
-                            <span class="price">COP $115.000</span>
+                            <span class="price">COP $80.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Lattafa Oud For Glory Amethyste', 115000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Lattafa Oud For Glory Amethyste', 80000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Carolina Herrera" data-name="Carolina Herrera 212 VIP Black"
-                    onclick="window.location.href='producto.html?name=Carolina Herrera 212 VIP Black&price=90000&img=212vip.png'">
+                    onclick="window.location.href='producto.html?name=Carolina Herrera 212 VIP Black&price=80000&img=212vip.png'">
                     <img src="212vip.png" alt="Carolina Herrera 212 VIP Black">
                     <div class="perfume-info">
                         <h3>Carolina Herrera 212 VIP Black</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Carolina Herrera 212 VIP Black', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Carolina Herrera 212 VIP Black', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Carolina Herrera" data-name="Carolina Herrera 212 Wins Men"
-                    onclick="window.location.href='producto.html?name=Carolina Herrera 212 Wins Men&price=90000&img=212wm.png'">
+                    onclick="window.location.href='producto.html?name=Carolina Herrera 212 Wins Men&price=80000&img=212wm.png'">
                     <img src="212wm.png" alt="Carolina Herrera 212 Wins Men">
                     <div class="perfume-info">
                         <h3>Carolina Herrera 212 Wins Men</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Carolina Herrera 212 Wins Men', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Carolina Herrera 212 Wins Men', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Valentino" data-name="Valentino Born in Roma Intense"
-                    onclick="window.location.href='producto.html?name=Valentino Born in Roma Intense&price=90000&img=valentinoBinR.png'">
+                    onclick="window.location.href='producto.html?name=Valentino Born in Roma Intense&price=80000&img=valentinoBinR.png'">
                     <img src="valentinoBinR.png" alt="Valentino Born in Roma Intense">
                     <div class="perfume-info">
                         <h3>Valentino Born in Roma Intense</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Valentino Born in Roma Intense', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Valentino Born in Roma Intense', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="perfume-card" data-brand="Valentino" data-name="Valentino Born in Roma"
-                    onclick="window.location.href='producto.html?name=Valentino Born in Roma&price=90000&img=valentinoBinR.png'">
+                    onclick="window.location.href='producto.html?name=Valentino Born in Roma&price=80000&img=valentinoBinR.png'">
                     <img src="valentinoBinR.png" alt="Valentino Born in Roma">
                     <div class="perfume-info">
                         <h3>Valentino Born in Roma</h3>
                         <div class="price-action">
-                            <span class="price">COP $90.000</span>
+                            <span class="price">COP $55.000</span>
                             <button class="btn-buy"
-                                onclick="event.stopPropagation(); addToCart('Valentino Born in Roma', 90000)">Comprar</button>
+                                onclick="event.stopPropagation(); addToCart('Valentino Born in Roma', 55000)">Comprar</button>
                         </div>
                     </div>
                 </div>

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Perfumería JyA</title>
-    <!-- Fuente Lobster -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         .btn-comprar {
@@ -47,52 +47,76 @@
 
         /* ===== HEADER ===== */
         header {
-            background-color: #222;
-            padding: 8px 30px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 16px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0;
             font-family: 'Poppins', sans-serif;
+            border-bottom: 3px solid #d4af37;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
         }
 
         .header-left {
             display: flex;
             align-items: center;
+            flex: 0 0 auto;
+            min-width: 100px;
         }
 
         .brand-name {
             color: #d4af37;
             font-size: 14px;
-            font-family: 'Lobster', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .header-center {
             text-align: center;
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80px;
         }
 
         /* Cambia el tamaño de la imagen aquí / Change image size here */
         .header-center img {
-            height: 60px;
+            height: 80px;
             /* Ajusta este valor según prefieras / Adjust this value as preferred */
             width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         }
 
         .header-right {
             display: flex;
             justify-content: flex-end;
+            flex: 0 0 auto;
+            gap: 8px;
         }
 
         nav a {
-            color: #fff;
+            color: #e0e0e0;
             text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-            font-size: 14px;
+            margin-left: 14px;
+            font-weight: 500;
+            font-size: 11px;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            padding: 6px 10px;
+            border-radius: 4px;
         }
 
         nav a:hover {
             color: #d4af37;
+            background-color: rgba(212, 175, 55, 0.1);
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 6px;
         }
 
         /* ===== HERO ===== */
@@ -903,7 +927,7 @@
                 <div>
                     <h3>Enlaces</h3>
                     <p><a href="index.html">Inicio</a></p>
-                    <p><a href="perfumes.html">Perfumes</a></p>
+                    <p><a href="catalogo.html">Perfumes</a></p>
                     <p><a href="contacto.html">Contacto</a></p>
                 </div>
 

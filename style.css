@@ -1025,14 +1025,24 @@
  @media screen and (max-width: 480px) {
 
      header {
+<<<<<<< HEAD
          padding: 6px 8px;
          min-height: 48px;
          gap: 4px;
+=======
+         padding: 10px 12px;
+         min-height: 55px;
+         gap: 10px;
+>>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
      }
 
      .header-left {
          flex: 0 0 auto;
+<<<<<<< HEAD
          min-width: 60px;
+=======
+         min-width: 70px;
+>>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
      }
 
      .header-center {
@@ -1040,7 +1050,11 @@
          display: flex;
          justify-content: center;
          align-items: center;
+<<<<<<< HEAD
          min-height: 36px;
+=======
+         min-height: 40px;
+>>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
      }
 
      .header-right {
@@ -1049,21 +1063,36 @@
      }
 
      .brand-name {
+<<<<<<< HEAD
          font-size: 7px;
          letter-spacing: 0.4px;
+=======
+         font-size: 9px;
+         letter-spacing: 0.6px;
+>>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
          font-weight: 600;
          white-space: nowrap;
      }
 
      .header-center img {
+<<<<<<< HEAD
          height: 30px;
+=======
+         height: 35px;
+>>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
          width: auto;
      }
 
      nav a {
+<<<<<<< HEAD
          font-size: 6px;
          margin-left: 2px;
          padding: 3px 4px;
+=======
+         font-size: 8px;
+         margin-left: 4px;
+         padding: 5px 6px;
+>>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
          letter-spacing: 0;
          white-space: nowrap;
      }

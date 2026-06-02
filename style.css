@@ -942,11 +942,11 @@
          display: flex;
          justify-content: center;
          align-items: center;
-                min-height: 50px;
-            }
+         min-height: 50px;
+     }
 
-            .header-center img {
-                height: 50px;
+     .header-center img {
+         height: 50px;
          gap: 4px;
          min-width: auto;
      }

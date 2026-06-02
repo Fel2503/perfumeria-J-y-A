@@ -550,8 +550,6 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     gap: 10px;
-     flex-wrap: wrap;
      margin-top: 10px;
  }
 
@@ -1050,14 +1048,11 @@
      .header-right {
          flex: 0 0 auto;
          min-width: auto;
-         gap: 4px;
+         gap: 2px;
      }
 
      .brand-name {
-         font-size: 9px;
-         letter-spacing: 0.6px;
-         font-weight: 600;
-         white-space: nowrap;
+         display: none;
      }
 
      .header-center img {
@@ -1067,7 +1062,7 @@
 
      nav a {
          font-size: 8px;
-         padding: 5px 6px;
+         padding: 4px 4px;
          letter-spacing: 0;
          white-space: nowrap;
      }
@@ -1083,9 +1078,9 @@
      .perfumes-destacados,
      .destacados,
      .perfume-grid {
-         grid-template-columns: repeat(2, 1fr);
-         gap: 10px;
-         padding: 0 12px;
+         grid-template-columns: 1fr;
+         gap: 20px;
+         padding: 0 20px;
      }
 
      section {

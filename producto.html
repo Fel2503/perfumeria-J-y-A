@@ -51,6 +51,7 @@
             font-weight: 600;
             letter-spacing: 2px;
             text-transform: uppercase;
+            margin-left: 10px;
         }
 
         .header-center {
@@ -328,24 +329,14 @@
         /* AJUSTE PARA PANTALLAS MUY PEQUEÑAS (≤480px) */
         @media (max-width: 480px) {
             header {
-<<<<<<< HEAD
-                padding: 6px 8px;
-                min-height: 48px;
-                gap: 4px;
-=======
                 padding: 10px 12px;
                 min-height: 65px;
                 gap: 10px;
->>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
             }
 
             .header-left {
                 flex: 0 0 auto;
-<<<<<<< HEAD
                 min-width: 60px;
-=======
-                min-width: 70px;
->>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
             }
 
             .header-center {
@@ -353,11 +344,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-<<<<<<< HEAD
-                min-height: 36px;
-=======
                 min-height: 45px;
->>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
             }
 
             .header-right {
@@ -366,13 +353,8 @@
             }
 
             .brand-name {
-<<<<<<< HEAD
-                font-size: 7px;
-                letter-spacing: 0.4px;
-=======
                 font-size: 9px;
                 letter-spacing: 0.6px;
->>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
                 font-weight: 600;
                 white-space: nowrap;
             }
@@ -383,15 +365,9 @@
             }
 
             nav a {
-<<<<<<< HEAD
-                font-size: 6px;
-                margin-left: 2px;
-                padding: 3px 4px;
-=======
                 font-size: 8px;
                 margin-left: 4px;
                 padding: 5px 6px;
->>>>>>> fbe3a629c18595128d572e280f5b9d0cd230a3ed
                 letter-spacing: 0;
                 white-space: nowrap;
             }
@@ -470,13 +446,18 @@
                 <span class="brand-name">Perfumería J y A</span>
             </div>
             <div class="header-center">
-                <img src="sinfondo2.png" alt="Logo Perfumería J y A">
             </div>
             <nav class="header-right">
                 <a href="index.html">Inicio</a>
                 <a href="catalogo.html">Catalogo</a>
                 <a href="contacto.html">Contacto</a>
                 <a href="ventaspormayor.html">Ventas al por mayor</a>
+
+                <div class="header-search">
+                    <input type="text" id="headerSearchInput" placeholder="Buscar...">
+                    <span class="search-icon" onclick="toggleSearch()">🔍</span>
+                </div>
+                <div class="search-dropdown" id="searchDropdown"></div>
             </nav>
         </header>
 

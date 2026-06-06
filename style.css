@@ -270,9 +270,15 @@
  }
 
  .hero-content p {
-     font-size: 20px;
-     max-width: 600px;
-     margin: auto;
+     font-family: 'Playfair Display', serif;
+     font-style: italic;
+     font-size: 24px;
+     letter-spacing: 1px;
+     line-height: 1.6;
+     color: #f9f9f9;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+     max-width: 650px;
+     margin: 10px auto;
  }
 
  .hero-content a {
@@ -565,24 +571,25 @@
  /* ===== CONTACTO SIN FORMULARIO ===== */
 
  .contacto-grid {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 30px;
-     max-width: 1000px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+     gap: 20px;
+     max-width: 800px;
      width: 100%;
      margin: 20px auto 40px;
  }
 
  .contacto-box {
-     flex: 1 1 calc(50% - 30px);
-     min-width: 280px;
-     max-width: 450px;
      background: #fff;
-     padding: 30px;
+     padding: 25px 20px;
      border-radius: 12px;
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
      text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
  }
 
  .contacto-box h3 {
